@@ -1,0 +1,198 @@
+/*Général*/
+
+html,body{
+    background: #59982f;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    background: white;
+    border: 1px black solid;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.button p{
+    margin: 1em 2em;
+}
+
+h1{
+    text-align: center;
+}
+
+.screamer{
+    z-index: 1;
+    position: absolute;
+    display:none;
+    width: 100%;
+    height: auto;
+}
+
+/*Enter Screen*/
+
+.enter-screen{
+    height: 50%;
+    position: relative;
+    width: 60%;
+    display: flex; /*flex*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.enter-screen>p{
+    font-size: 3.5em;
+}
+
+.enter-button-container{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Welcome Screen*/
+
+.welcome-screen{
+    display: none; /*none*/
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.welcome-screen p{
+    font-size: 2.3em;
+}
+
+.welcome1{
+    display: block;
+}
+
+.welcome2{
+    display: none;
+}
+
+.welcome3{
+    display: none;
+}
+
+.welcome4{
+    display: none;
+}
+
+.welcome-screen>.button{
+    display: none;
+}
+
+/*Player Screen*/
+
+.player-screen{
+    display: none; /*none*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    height: 50%;
+    width: 60%;
+}
+
+.player-screen>p{
+    font-size: 2.5em;
+}
+
+.welcome-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.player-button{
+    font-size: 2em;
+    margin: 1.5em;
+    background: white;
+    border: 1px black solid;
+    border-radius: 9px;
+}
+
+.player-button p{
+    margin: 1.7em 2em;
+}
+
+/*Game-screen*/
+
+.game-screen{
+    height: 90%;
+    width: 90%;
+    display: none; /*none*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.canvas{
+    background-color: #fefee2;
+    border: 2px solid red;
+}
+
+.game-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.score{
+    font-size: 5em;
+    color: #fefee2;
+}
+
+/*End-screen*/
+
+.end-screen{
+    height: 90%;
+    width: 90%;
+    display: none; /*none*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.restart-button{
+    background: white;
+    border: 1px black solid;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.restart-button p{
+    margin: 1em 2em;
+    font-size: 2em;
+}
+
+.gameover{
+    font-size: 3em;
+    color: #CA0101;
+}
+
+.score-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-container h2{
+    margin-right: 10px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake 🐍</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <img class="screamer" src="scripts/screamer.jpeg" alt="coucou">
+    <div class="enter-screen">
+        <p>Snake 🐍</p>
+        <div class="enter-button-container">
+            <div class="already-play-js button">
+              <p>J'ai déja joué au jeu</p>
+            </div>
+            <div class="never-play-js button">
+              <p>Je découvre le jeu</p>
+            </div>
+        </div>
+    </div>
+    <div class="welcome-screen">
+       <p class="welcome1">Hey !</p>
+       <p class="welcome2">Bienvenue dans Snake 🐍</p>
+       <p class="welcome3">Snake est un jeu ou vous<br><br>controlez un serpent</p>
+       <p class="welcome4">Pour gagner, il suffit de <br><br>manger le plus de pomme possible !<br><br> Sans toucher d'obstacle !</p>
+       <div class="welcome-button-js button">
+           <p>Je veux jouer !</p>
+       </div>
+    </div>
+    <div class="game-screen">
+        <div class="game-container">
+            <h1 class="score"></h1>
+            <canvas class="canvas" height="450" width="450"></canvas>
+        </div>
+    </div>
+    <div class="end-screen">
+        <h1 class="gameover">Game Over</h1>
+        <div class="score-container">
+            <h2>Bravo ! Tu as fais</h2>
+            <h1 class="finalScore"></h1>
+        </div>
+        <div class="restart-container">
+            <div class="restart-button-js restart-button">
+                <p>Rejouer</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
